@@ -1,7 +1,15 @@
+-- SELECT
+--   title,
+--   author_fname
+-- FROM
+--   books
+-- WHERE
+--   author_fname LIKE "%da%";
 SELECT
-  title,
-  author_fname
+  author_lname,
+  author_fname,
+  title
 FROM
   books
 WHERE
-  author_fname LIKE "%da%";
+  author_fname LIKE "da%";
