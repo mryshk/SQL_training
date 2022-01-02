@@ -1,7 +1,14 @@
+-- SELECT
+--   COUNT(*),
+--   released_year
+-- FROM
+--   books
+-- GROUP BY
+--   released_year;
 SELECT
-  COUNT(*),
-  released_year
+  COUNT(title),
+  title
 FROM
   books
 GROUP BY
-  released_year;
+  title;
