@@ -9,7 +9,7 @@ SELECT
   ) AS 'short title'
 FROM books;
 
-SELECT 
+SELECT
   CONCAT(
     REVERSE(author_fname),
     author_fname
