@@ -1,5 +1,5 @@
 SELECT
-  COUNT(released_year),
+  COUNT(*),
   released_year
 FROM
   books
