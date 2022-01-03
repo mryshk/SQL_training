@@ -5,10 +5,16 @@
 --   books
 -- GROUP BY
 --   released_year;
+-- SELECT
+--   COUNT(title),
+--   title
+-- FROM
+--   books
+-- GROUP BY
+--   title;
 SELECT
-  COUNT(title),
-  title
+  COUNT(author_lname)
 FROM
   books
-GROUP BY
-  title;
+WHERE
+  author_lname LIKE "%t%";
