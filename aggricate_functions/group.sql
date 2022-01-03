@@ -21,6 +21,7 @@
 SELECT
   CONCAT(
     'In',
+    ' ',
     released_year,
     ' ',
     COUNT(*),
