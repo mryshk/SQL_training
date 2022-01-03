@@ -12,9 +12,21 @@
 --   books
 -- GROUP BY
 --   title;
+-- SELECT
+--   COUNT(author_lname)
+-- FROM
+--   books
+-- WHERE
+--   author_lname LIKE "%t%";
 SELECT
-  COUNT(author_lname)
+  CONCAT(
+    'In',
+    released_year,
+    ' ',
+    COUNT(*),
+    'book(s) released'
+  ) AS year
 FROM
   books
-WHERE
-  author_lname LIKE "%t%";
+GROUP BY
+  released_year;
