@@ -32,7 +32,7 @@ WHERE
     FROM
       books
   );
-  
+
 SELECT
   released_year AS year,
   COUNT(*) AS '# books',
