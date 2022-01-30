@@ -32,7 +32,6 @@ SELECT
 FROM
   orders
   JOIN customers ON orders.customer_id = customers.id;
-
 SELECT
   order_date,
   amount,
@@ -41,3 +40,5 @@ SELECT
 FROM
   orders
   JOIN customers ON orders.customer_id = customers.id;
+
+
