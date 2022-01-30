@@ -10,7 +10,8 @@ FROM
   orders
 WHERE
   customer_id = 1;
--- subqueryを使用。
+
+-- subqueryを使用。where句の中にクエリが入っている形。
 SELECT
   *
 FROM
