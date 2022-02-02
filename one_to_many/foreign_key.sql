@@ -11,6 +11,14 @@ CREATE TABLE orders(
   customer_id INT,
   FOREIGN KEY(customer_id) REFERENCES customers(id)
 );
+
+CREATE TABLE orders2(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(100),
+  customer_id INT,
+  FOREIGN KEY(customer_id) REFERENCES customers(id)
+  ON DELETE CASCADE;
+)
 INSERT INTO
   customers(first_name, last_name, email)
 VALUES('Boy', 'George', 'george@gmail.com'),
