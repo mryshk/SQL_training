@@ -45,3 +45,10 @@ SELECT
 FROM
   customers
   JOIN orders ON orders.customer_id = customers.id;
+
+
+SELECT
+  amount,order_date
+FROM
+  orders
+JOIN customers ON orders.customer_id = customers.id;
