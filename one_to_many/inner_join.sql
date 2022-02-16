@@ -33,6 +33,11 @@ FROM
   orders
   JOIN customers ON orders.customer_id = customers.id;
 SELECT
+  *
+FROM
+  customers
+  INNER JOIN orders ON customers.id = orders.customer_id;
+SELECT
   order_date,
   amount,
   first_name,
@@ -45,10 +50,9 @@ SELECT
 FROM
   customers
   JOIN orders ON orders.customer_id = customers.id;
-
-
 SELECT
-  amount,order_date
+  amount,
+  order_date
 FROM
   orders
-JOIN customers ON orders.customer_id = customers.id;
+  JOIN customers ON orders.customer_id = customers.id;
