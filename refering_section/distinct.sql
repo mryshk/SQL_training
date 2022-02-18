@@ -4,7 +4,6 @@ SELECT
   DISTINCT CONCAT(author_lname, ' ', author_fname) AS 'distinct full name'
 FROM
   books;
-
 SELECT
   DISTINCT CONCAT(author_fname, ' ', author_lname) AS "distinct full name"
 FROM
@@ -15,4 +14,3 @@ SELECT
   author_fname
 FROM
   books;
-
